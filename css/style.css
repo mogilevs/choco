@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+.body {
+  font-family: "Montserrat", sans-serif;
+  background: #fafafa;
+}
+.hero {
+  padding: 395px 20px 40px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0.4) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../images/chocolate_main_1x.jpg);
+  backgroung-image-repeat: none;
+  background-size: cover;
+  border-radius: 30px;
+  margin-bottom: 80px;
+}
+.hero-container {
+  width: 335px;
+}
+.hero-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin: 0 auto 32px;
+}
+.hero-wrap {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+.hero-btn {
+  background: #fd9222;
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 120px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+.hero-link {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 159px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+.hero-scroll-wrap {
+  display: flex;
+  gap: 12px;
+}
+.hero-scroll {
+  width: 107px;
+  height: 28px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.hero-scroll-icon {
+}
+
+.section {
+  margin-bottom: 80px;
+}
+.features {
+  background: #1e1823;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.features-list {
+}
+.features-list-item {
+  margin-bottom: 20px;
+}
+.features-list-item:last-child {
+  margin-bottom: 0;
+}
+.features-icon-wrap {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 22px;
+}
+.features-icon {
+}
+.features-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+.features-item-text {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.made-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  width: 283px;
+  margin: 0 auto 27px;
+  text-align: center;
+}
+.made-title-orange {
+  color: #fd9222;
+}
+.made-list {
+}
+.made-list-item {
+  padding-top: 32px;
+  padding-bottom: 28px;
+  padding-left: 28px;
+  border-radius: 15px;
+  position: relative;
+  min-height: 270px;
+}
+.made-list-item:first-child {
+  background: #fd9222;
+}
+.made-list-item:nth-child(3) {
+  background: #1e1823;
+}
+.made-item-icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+.made-item-image {
+  background-color: inherit;
+  margin: 0 auto 16px;
+}
+.made-item-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.made-list-item:nth-child(even) > .made-item-title {
+  color: #111;
+}
+
+/*-------------- MADE SECTION-------------------*/
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  margin-bottom: 32px;
+}
+.image {
+  border-radius: 15px;
+  width: 335px;
+  height: 500px;
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../images/made-1x.jpg);
+  background-image-repeat: none;
+  background-size: cover;
+  margin-bottom: 20px;
+  margin: 0 auto 20px;
+}
+.text {
+}
+.list {
+}
+.item {
+}
+/*-------------end MADE section-------------*/
