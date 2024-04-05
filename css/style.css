@@ -50,7 +50,7 @@ button {
       rgba(17, 17, 17, 0.4) 100%
     ),
     url(../images/chocolate_main_1x.jpg);
-  backgroung-image-repeat: none;
+  backgroung-repeat: no-repeat;
   background-size: cover;
   border-radius: 30px;
   margin-bottom: 80px;
@@ -217,15 +217,163 @@ button {
       rgba(17, 17, 17, 0.4)
     ),
     url(../images/made-1x.jpg);
-  background-image-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 20px;
   margin: 0 auto 20px;
 }
+
+.text-list-wrap {
+  padding: 20px 14px;
+}
+
 .text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111;
+  margin-bottom: 20px;
 }
 .list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
+
 .item {
+  display: flex;
+  gap: 8px;
+  align-items: start;
+  justify-content: start;
+  position: relative;
 }
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #4c4c4c;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.item-span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
+  padding-left: 16px;
+}
+
 /*-------------end MADE section-------------*/
+
+.products-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  margin-bottom: 22px;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.products-list-item {
+  padding: 32px 52px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products-img {
+  margin-bottom: 8px;
+}
+.products-item-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 2px;
+}
+.products-item-type {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+  margin-bottom: 18px;
+}
+.products-price-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  padding: 8px 20px;
+  width: 94px;
+  height: 33px;
+  background: #fafafa;
+}
+.review-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  margin: 0 auto 74px;
+}
+
+.review-wrap {
+  padding: 56px 18px 42px;
+  margin-bottom: 32px;
+  position: relative;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+.review-image {
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.review-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111;
+  margin-bottom: 24px;
+}
+.review-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+.review-btn {
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 165px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #111;
+  margin: 0 auto;
+  display: block;
+}
