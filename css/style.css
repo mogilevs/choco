@@ -229,7 +229,6 @@ button {
   flex-direction: column;
   gap: 20px;
   justify-content: center;
-  
 }
 .features-list-item {
   position: relative;
@@ -300,6 +299,93 @@ button {
 .made-list-item:nth-child(even) > .made-item-title {
   color: #111;
 }
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  margin-bottom: 32px;
+}
+.image {
+  border-radius: 15px;
+  width: 335px;
+  height: 500px;
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../images/made-1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .image {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/made-2x.jpg);
+  }
+}
+
+/*-------------- MADE SECTION-------------------*/
+
+.text-list-wrap {
+  padding: 20px 14px;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111;
+  margin-bottom: 20px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.item {
+  display: flex;
+  gap: 8px;
+  align-items: start;
+  justify-content: start;
+  position: relative;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #4c4c4c;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.item-span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
+  padding-left: 16px;
+}
+
+/*-------------end MADE section-------------*/
 
 @media screen and (min-width: 768px) {
   .container {
@@ -401,7 +487,7 @@ button {
     width: 308px;
     margin: 0;
   }
-  
+
   .made-title {
     margin-bottom: 50px;
     font-size: 24px;
@@ -415,7 +501,46 @@ button {
   .made-list-item {
     width: calc((100% - 88px) / 2);
   }
+  .made-container {
+    width: 614px;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+  .image {
+    width: 614px;
+    height: 400px;
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/made-tab-1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .image {
+      width: 614px;
+      height: 400px;
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.4),
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../images/made-tab-2x.jpg);
+    }
+  }
+  .text-list-wrap {
+    padding: 32px;
+  }
+  .text {
+    margin-bottom: 28px;
+    width: 350px;
+  }
 }
+
+/*==================DESCKTOP=============================*/
 
 @media screen and (min-width: 1200px) {
   .container {
@@ -458,15 +583,15 @@ button {
     margin-bottom: 120px;
   }
   .features-list-item:not(:last-child):after {
-  content: "";
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  width: 124px;
-  height: 0px;
-  position: absolute;
-  top: 113px;
-  right: -106px;
-  transform: rotate(-90deg);
-}
+    content: "";
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 124px;
+    height: 0px;
+    position: absolute;
+    top: 113px;
+    right: -106px;
+    transform: rotate(-90deg);
+  }
   .made-list {
     gap: 32px 24px;
   }
@@ -475,81 +600,37 @@ button {
     padding-left: 23px;
   }
   .made-item-image {
-  margin-bottom: 36px;
+    margin-bottom: 36px;
+  }
+  .wrap {
+    flex-direction: row;
+  }
+  .image {
+    width: 600px;
+    height: 400px;
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/made-desk-1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .image {
+      width: 600px;
+      height: 400px;
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.4),
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../images/made-desk-2x.jpg);
+    }
+  }
+  .list {
+    gap: 24px;
+  }
 }
-
-
-/*-------------- MADE SECTION-------------------*/
-
-.title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #111;
-  margin-bottom: 32px;
-}
-.image {
-  border-radius: 15px;
-  width: 335px;
-  height: 500px;
-  background-image: linear-gradient(
-      rgba(17, 17, 17, 0.4),
-      rgba(17, 17, 17, 0.4)
-    ),
-    url(../images/made-1x.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 20px;
-  margin: 0 auto 20px;
-}
-
-.text-list-wrap {
-  padding: 20px 14px;
-}
-
-.text {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.33;
-  color: #111;
-  margin-bottom: 20px;
-}
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.item {
-  display: flex;
-  gap: 8px;
-  align-items: start;
-  justify-content: start;
-  position: relative;
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  background-color: #4c4c4c;
-  position: absolute;
-  left: 0;
-  top: 5px;
-}
-.item-span {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  color: #111;
-  padding-left: 16px;
-}
-
-/*-------------end MADE section-------------*/
 
 .products-title {
   font-weight: 600;
