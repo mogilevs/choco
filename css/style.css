@@ -171,6 +171,56 @@ button {
   transform: translate(-50%, -50%);
   background-color: transparent;
 }
+
+.features {
+  background: #1e1823;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.features-list-item {
+  margin-bottom: 20px;
+}
+.features-list-item:last-child {
+  margin-bottom: 0;
+}
+.features-icon-wrap {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 22px;
+  position: relative;
+}
+.features-icon {
+  fill: #fd9222;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.features-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+.features-item-text {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -251,6 +301,23 @@ button {
     width: 183px;
     height: 45px;
   }
+  .features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 88px;
+    row-gap: 44px;
+  }
+  .features-list-item {
+    width: 308px;
+    margin-bottom: 0;
+  }
+  .features-list-decor {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -290,62 +357,28 @@ button {
         url(../images/chocolate_desk_2x-min.jpg);
     }
   }
+  .features-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 44px;
+    justify-content: center;
+    align-items: center;
+  }
+  .features-list-decor {
+    display: unset;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 124px;
+    height: 0px;
+    transform: rotate(-90deg);
+  }
+  .features-list-item {
+    height: 250px;
+  }
 }
 .section {
   margin-bottom: 80px;
 }
-.features {
-  background: #1e1823;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
-.features-list {
-}
-.features-list-item {
-  margin-bottom: 20px;
-}
-.features-list-item:last-child {
-  margin-bottom: 0;
-}
-.features-icon-wrap {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 365px;
-  width: 62px;
-  height: 62px;
-  margin-bottom: 22px;
-  position: relative;
-}
-.features-icon {
-  fill: #fd9222;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.features-item-title {
-  font-weight: 600;
-  font-size: 18px;
-  color: #fff;
-  margin-bottom: 18px;
-}
-.features-item-text {
-  font-size: 14px;
-  letter-spacing: -0.02em;
-  color: rgba(255, 255, 255, 0.7);
-}
 .made-title {
   font-weight: 600;
   font-size: 20px;
