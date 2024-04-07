@@ -360,9 +360,8 @@ button {
   .features-list {
     display: flex;
     flex-wrap: nowrap;
-    gap: 44px;
+    gap: 88px;
     justify-content: center;
-    align-items: center;
   }
   .features-list-decor {
     display: unset;
@@ -372,7 +371,17 @@ button {
     transform: rotate(-90deg);
   }
   .features-list-item {
-    height: 250px;
+    position: relative;
+  }
+  .features-list-item:not(:last-child):after {
+    content: "";
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 124px;
+    height: 0px;
+    position: absolute;
+    top: 113px;
+    right: -106px;
+    transform: rotate(-90deg);
   }
 }
 .section {
