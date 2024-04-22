@@ -328,17 +328,6 @@ button {
   background-size: cover;
   margin: 0 auto;
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .image {
-    background-image: linear-gradient(
-        rgba(17, 17, 17, 0.4),
-        rgba(17, 17, 17, 0.4)
-      ),
-      url(../images/made-2x.jpg);
-  }
-}
 
 /*-------------- MADE SECTION-------------------*/
 
@@ -452,6 +441,10 @@ button {
   margin: 0 auto 32px;
 }
 .top-sellers-list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
 }
 .top-sellers-item {
   width: 335px;
@@ -465,13 +458,12 @@ button {
   transform: translateX(0);
 }
 
-.top-sellers-image {
+.tops-image-nuts {
   border-radius: 15px 15px 0 0;
   min-width: 335px;
   width: 335px;
   height: 464px;
   background-image: url(../images/top-sellers-mob-nuts-1x-min.jpg);
-
   margin: 0 auto;
 }
 .top-sellers-text {
@@ -502,7 +494,8 @@ button {
   border-left: 1px solid rgba(17, 17, 17, 0.1);
   border-right: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 0 0 15px 15px;
-  padding: 24px 56px;
+  padding: 24px 0;
+  text-align: center;
   font-weight: 600;
   font-size: 18px;
   line-height: 133%;
@@ -709,7 +702,28 @@ button {
   text-align: center;
   color: #fff;
 }
-
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .image {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/made-2x.jpg);
+  }
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../images/chocolate_main_2x.jpg);
+  }
+  .tops-image-nuts {
+    background-image: url(../images/top-sellers-mob-nuts-2x-min.jpg);
+  }
+}
 /*=====================TABLET==================================*/
 
 @media screen and (min-width: 768px) {
@@ -757,18 +771,7 @@ button {
       url(../images/chocolate_tab-min.jpg);
     margin-bottom: 40px;
   }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          180deg,
-          rgba(17, 17, 17, 0.4) 0%,
-          rgba(17, 17, 17, 0.4) 100%
-        ),
-        url(../images/chocolate_tab_2x-min.jpg);
-    }
-  }
+
   .hero-container {
     width: 704px;
   }
@@ -843,19 +846,7 @@ button {
       ),
       url(../images/made-tab-1x.jpg);
   }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .image {
-      width: 614px;
-      height: 400px;
-      background-image: linear-gradient(
-          rgba(17, 17, 17, 0.4),
-          rgba(17, 17, 17, 0.4)
-        ),
-        url(../images/made-tab-2x.jpg);
-    }
-  }
+
   .text-list-wrap {
     padding: 32px;
   }
@@ -873,6 +864,28 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
+  }
+  .top-sellers-title {
+    font-size: 24px;
+    line-height: 1.17;
+    margin: 0 auto 50px;
+  }
+  .top-sellers-item:nth-child(2) {
+    display: unset;
+  }
+  .tops-image-nuts {
+    width: 344px;
+    background-image: url(../images/top-sellers-tab-nuts-1x-min.jpg);
+  }
+  .tops-image-fruit {
+    border-radius: 15px 15px 0 0;
+    width: 344px;
+    height: 464px;
+    background-image: url(../images/top-sellers-tab-fruits-1x-min.jpg);
+    margin: 0 auto;
+  }
+  .top-sellers-name {
+    padding: 28px 0;
   }
   .review-title {
     font-size: 24px;
@@ -941,6 +954,34 @@ button {
     padding: 14px 28px;
     width: 128px;
   }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0.4) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(../images/chocolate_tab_2x-min.jpg);
+    }
+    .image {
+      width: 614px;
+      height: 400px;
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.4),
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../images/made-tab-2x.jpg);
+    }
+    .tops-image-nuts {
+      background-image: url(../images/top-sellers-tab-nuts-2x-min.jpg);
+    }
+    .tops-image-fruit {
+      background-image: url(../images/top-sellers-tab-fruits-2x-min.jpg);
+    }
+  }
 }
 
 /*==================DESCKTOP=============================*/
@@ -969,18 +1010,6 @@ button {
       ),
       url(../images/chocolate_desk-min.jpg);
     margin-bottom: 80px;
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          180deg,
-          rgba(17, 17, 17, 0.6) 0%,
-          rgba(17, 17, 17, 0.6) 100%
-        ),
-        url(../images/chocolate_desk_2x-min.jpg);
-    }
   }
   .section {
     margin-bottom: 120px;
@@ -1017,19 +1046,7 @@ button {
       ),
       url(../images/made-desk-1x.jpg);
   }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .image {
-      width: 600px;
-      height: 400px;
-      background-image: linear-gradient(
-          rgba(17, 17, 17, 0.4),
-          rgba(17, 17, 17, 0.4)
-        ),
-        url(../images/made-desk-2x.jpg);
-    }
-  }
+
   .list {
     gap: 24px;
   }
@@ -1039,6 +1056,24 @@ button {
   }
   .products-list-item {
     padding: 32px 19px;
+  }
+  .top-sellers-item:nth-child(3) {
+    display: unset;
+  }
+  .tops-image-nuts {
+    width: 368px;
+    background-image: url(../images/top-sellers-desk-nuts-1x-min.jpg);
+  }
+  .tops-image-fruit {
+    width: 368px;
+    background-image: url(../images/top-sellers-desk-fruits-1x-min.jpg);
+  }
+  .tops-image-dark {
+    border-radius: 15px 15px 0 0;
+    width: 344px;
+    height: 468px;
+    background-image: url(../images/top-sellers-dark-1x-min.jpg);
+    margin: 0 auto;
   }
   .review-item {
     width: calc((100% - 56px) / 3);
@@ -1074,6 +1109,36 @@ button {
     padding: 17px 32px;
     width: 137px;
     height: 52px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0.6) 0%,
+          rgba(17, 17, 17, 0.6) 100%
+        ),
+        url(../images/chocolate_desk_2x-min.jpg);
+    }
+    .image {
+      width: 600px;
+      height: 400px;
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.4),
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../images/made-desk-2x.jpg);
+    }
+    .tops-image-nuts {
+      background-image: url(../images/top-sellers-desk-nuts-2x-min.jpg);
+    }
+    .tops-image-fruit {
+      background-image: url(../images/top-sellers-desk-fruits-2x-min.jpg);
+    }
+    .tops-image-dark {
+      background-image: url(../images/top-sellers-dark-2x-min.jpg);
+    }
   }
 }
 /*==========================================================*/
